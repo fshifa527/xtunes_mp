@@ -15,7 +15,7 @@ function Landing() {
           <h2> Media Player</h2> 
           <p style={{textAlign:'justify',color:'#f5f8ff'}}>This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more,
            please see go through our website.</p>
-           <Link className='btn btn-primary' style={{color:'#f5f8ff'}} >Explore</Link>
+           <Link to={'dash'} className='btn btn-primary' style={{color:'#f5f8ff'}} >Explore</Link>
       </div>
       <div className='col'>
        <img className='img-fluid rounded shadow' style={{}} src="https://blog.icons8.com/wp-content/uploads/2021/06/Cover-7-1200x600.png" alt="" />
