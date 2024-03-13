@@ -1,0 +1,51 @@
+import React, { useState } from 'react'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Addvideo from '../components/Addvideo';
+import Categori from '../components/Categori';
+import Videos  from '../components/Videos';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
+import { Link } from 'react-router-dom';
+
+function Dashboard() {
+  const [resStatus,setResStatus]=useState("")
+  return (
+    <>
+    <h2>DashBoard</h2>
+    <Link to={'/hist'} className= 'btn btn-success float-end mb-5'>Go To History</Link>
+
+    <Row className='mt-3 p-5'>
+      <Col sm='1' md='1'>
+        <Addvideo setRes={setResStatus}/>
+      </Col>
+      <Col sm='4' md='8'>
+        <Videos resStatus={resStatus}/>
+      </Col>
+       <Col sm='2' md='3'>
+       <Categori />
+     </Col>
+    </Row>
+       
+    <ToastContainer
+position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+transition:Bounce>
+
+</ToastContainer>
+
+
+    </>
+ 
+  )
+}
+
+export default Dashboard

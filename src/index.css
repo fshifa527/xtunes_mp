@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color:#98A9BE;
+    /* #a8c1ff */
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.navbar{
+  color: whitesmoke;
+}
