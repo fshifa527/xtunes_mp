@@ -1,1 +1,1 @@
-export const BASE_URL="http://localhost:3490"
+export const BASE_URL="https://xtunes-server.onrender.com"
